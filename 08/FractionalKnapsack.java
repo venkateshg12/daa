@@ -24,10 +24,10 @@ public class FractionalKnapsack {
             if (capacity == 0) break;
 
             if (item.weight <= capacity) {
-                totalValue += item.value;      // take whole item
+                totalValue += item.value;     
                 capacity -= item.weight;
             } else {
-                totalValue += item.ratio * capacity; // take fraction
+                totalValue += item.ratio * capacity;
                 capacity = 0;
             }
         }
