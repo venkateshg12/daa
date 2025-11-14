@@ -1,8 +1,7 @@
 public class NQueens {
 
-    static int N = 4; // change this to any size
+    static int N = 4; 
 
-    // check if placing queen at board[row][col] is safe
     static boolean isSafe(int board[][], int row, int col) {
 
         // check same row on left
@@ -24,18 +23,18 @@ public class NQueens {
     }
 
     static boolean solveNQ(int board[][], int col) {
-        if (col == N)  // all queens placed
+        if (col == N)  
             return true;
 
         for (int row = 0; row < N; row++) {
 
             if (isSafe(board, row, col)) {
-                board[row][col] = 1;   // place queen
+                board[row][col] = 1;   
 
-                if (solveNQ(board, col + 1))  // place next queen
+                if (solveNQ(board, col + 1))  
                     return true;
 
-                board[row][col] = 0;   // backtrack
+                board[row][col] = 0;   
             }
         }
         return false;
