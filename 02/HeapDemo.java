@@ -140,8 +140,8 @@ public class HeapDemo {
 
         System.out.println("\nDeleting element at index 2...");
         
-        min.delete(2);  
-        max.delete(2);
+        min.delete(0);  
+        max.delete(0);
 
         // Display after deletion
         min.display();
