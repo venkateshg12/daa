@@ -57,7 +57,6 @@ public class DijkstraCompare {
         return dist;
     }
 
-    // ------------------ MAIN: Compare Performance ------------------
     public static void main(String[] args) {
 
         int V = 5;
@@ -80,12 +79,10 @@ public class DijkstraCompare {
         list.get(3).add(new int[]{0,30}); list.get(3).add(new int[]{2,20}); list.get(3).add(new int[]{4,60});
         list.get(4).add(new int[]{0,100}); list.get(4).add(new int[]{2,10}); list.get(4).add(new int[]{3,60});
 
-        // Measure matrix time
         long start1 = System.nanoTime();
         int[] distM = dijkstraMatrix(matrix, 0);
         long timeMatrix = System.nanoTime() - start1;
 
-        // Measure list time
         long start2 = System.nanoTime();
         int[] distL = dijkstraList(list, 0);
         long timeList = System.nanoTime() - start2;
