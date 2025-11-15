@@ -9,7 +9,7 @@ public class Main {
     private int[] low;    
     private int[] parent;
     private Stack<String> edgeStack; 
-    public BiconnectedComponents(int V) {
+    public Main(int V) {.  // BiconnnectedComponents
         this.V = V;
         adj = new ArrayList[V];
         for (int i = 0; i < V; i++) adj[i] = new ArrayList<>();
@@ -76,7 +76,9 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        BiconnectedComponents g = new BiconnectedComponents(5);
+         // BiconnectedComponents g = new BiconnectedComponents(5);
+
+Main g  = new Main(5);
 
         g.addEdge(0, 1);
         g.addEdge(1, 2);
