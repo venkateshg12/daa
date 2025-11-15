@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class DijkstraCompare {
+public class Main {
 
     static int[] dijkstraMatrix(int[][] graph, int src) {
         int V = graph.length;

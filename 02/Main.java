@@ -120,7 +120,7 @@ class MaxHeap {
     }
 }
 
-public class HeapDemo {
+public class  Main{
     public static void main(String[] args) {
 
         MinHeap min = new MinHeap(20);

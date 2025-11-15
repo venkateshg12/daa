@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class BiconnectedComponents {
+public class Main {
     private int V; 
     private List<Integer>[] adj; 
 

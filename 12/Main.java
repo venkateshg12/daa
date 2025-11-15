@@ -1,4 +1,4 @@
-public class TSP_BnB {
+public class Main {
 
     static int N = 4;
     static int[][] graph = {

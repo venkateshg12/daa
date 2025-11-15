@@ -11,7 +11,7 @@ class Item {
     }
 }
 
-public class FractionalKnapsack {
+public class Main {
 
     static double knapsack(Item[] items, int capacity) {
 

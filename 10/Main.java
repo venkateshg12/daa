@@ -1,4 +1,4 @@
-public class NQueens {
+public class Main {
 
     static int N = 4; 
 
